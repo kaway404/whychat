@@ -10,6 +10,20 @@
 ?>
 <div id="chat">
 
+
+
+<div class="toper">
+	<?php 
+if(isset($_GET['iduser'])){
+	$chatuser = DBEscape( strip_tags(trim($_GET['iduser']) ) );
+	$chatid = DBEscape( strip_tags(trim($_COOKIE['iduser']) ) );
+    $chatid = DBRead('user', "WHERE id = '{$chatuser}' LIMIT 1 ");
+    $chatid = $chatid[0];
+	?>
+	<p class="peoplechat"><?php echo $chatid['nome']; ?> <?php echo $chatid['sobrenome']; ?></p>
+	<?php } ?>
+</div>
+
 <div class="left menu">
 	<div class="status">
 	<div class="friends">
@@ -67,11 +81,69 @@ $("document").ready(function(){
 </script>
 
 
+
+
+</div>
+
+<div class="centermsg">
+<?php 
+if(isset($_GET['iduser'])){
+	$chatuser = DBEscape( strip_tags(trim($_GET['iduser']) ) );
+	$chatid = DBEscape( strip_tags(trim($_COOKIE['iduser']) ) );
+    $chatid = DBRead('user', "WHERE id = '{$chatuser}' LIMIT 1 ");
+    $chatid = $chatid[0];
+	?>
+
+	<div class="msgtoper" id="todasmsg">
+
+	</div>
+
+	<div class="bottommsg">
+	<form method="post">
+	<input type="text" id="sendmsg" class="sendmsg" placeholder="Escreva uma mensagem..."/>
+	<button id="enviarsms"></button>
+	</form>	
+	</div>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function() {
+    $("#enviarsms").click(function() {
+        var msg = $("#sendmsg");
+        var msgPost = msg.val();
+        $.post("send.php?who=<?php echo $_GET['iduser']; ?>", {msg: msgPost},
+        function(data){
+         $("#resposta2").html(data);
+         }
+         , "html");
+         return false;
+    });
+});
+</script>
+
+<script>
+function chatrealtime(){
+	var req = new XMLHttpRequest();
+	req.onreadystatechange = function(){
+		if(req.readyState == 4 && req.status == 200){
+			document.getElementById('todasmsg').innerHTML = req.responseText;
+		}
+	}
+
+req.open('GET', 'chat.php?who=<?php echo $_GET['iduser']; ?>', true);
+req.send();
+
+}
+
+setInterval(function(){chatrealtime();}, 1000);
+</script>
+
+	<?php } else{?>
+
+	<?php } ?>
+</div>
+
 </div>
 
 
-
-
-<div class="toper"></div>
-
-</div>

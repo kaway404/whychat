@@ -18,7 +18,7 @@ $profile2 = DBRead( 'user', "WHERE nome LIKE '%$nome%' ORDER BY id DESC LIMIT 9"
 else 
 	foreach ($profile2 as $profile22):
  ?>
-
+<a href="?iduser=<?Php echo $profile22['id'] ?>&newchat=1">
 <div class="peoples searchp">
 		<div class="people">
 			<div id="aosa">
@@ -27,5 +27,5 @@ else
 		</div>
 		<span><?php echo $profile22['nome']; ?> <?php echo $profile22['sobrenome']; ?></span>
 	</div>
-
+</a>
  <?php endforeach; } ?>

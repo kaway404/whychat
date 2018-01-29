@@ -112,11 +112,11 @@ body{
 
 .menu{
 	position: relative;
-	width: 420px;
+	width: 23%;
 	height: 100%;
 	background: #fff;
 	border-right: 2px solid rgba(0, 0, 0, .10);
-	z-index: 20;
+	z-index: 50;
 }
 
 .toper{
@@ -126,7 +126,7 @@ body{
 	height: 55px;
 	border-bottom: 1px solid rgba(0, 0, 0, .10);
 	width: 100%;
-	z-index: 10;
+	z-index: 40;
 }
 
 .status{
@@ -176,6 +176,7 @@ body{
 	position: relative;
 	top: 10px;
 	cursor: pointer;
+	padding-bottom: 5px;
 }
 
 .peoples:hover{
@@ -224,4 +225,215 @@ body{
 .friends:hover{
 	opacity: 1;
 	 background-position: 0 -38px;
+}
+
+
+.peoplechat{
+	text-align: center;
+}
+
+#chat a{
+	color: #000;
+	text-decoration: none;
+}
+
+.centermsg{
+	background: #fff;
+	position: relative;
+	height: 100%;
+	width: 48%;
+	z-index: 200;
+	float: left;
+	z-index: 10;
+	top: 0px;
+	border-right: 2px solid rgba(0, 0, 0, .10);
+}
+
+.bottommsg{
+	position: absolute;
+	bottom: 0;
+	height: 50px;
+	width: 100%;
+	border-top: 1px solid rgba(0, 0, 0, .10);
+	background: #fff;
+}
+
+.msgtoper{
+	position: relative;
+	top: 55px;
+}
+
+.eumandei{
+	float: right;
+}
+
+.eumandeiback{
+	background: #e0111182 !important;
+	border-radius: 40px;
+	border-top-left-radius: 1.4em;
+}
+
+.eumandeiback span{
+	color: #fff;
+}
+
+#wrapper{
+	position: relative;
+    white-space: pre-wrap;
+    height: auto;
+    background: red;
+}
+
+._1t_p {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+@media (min-width: 1600px)
+FtGL50QXkgX.css:1
+.__i_ {
+    font-size: 16px;
+}
+
+@media (min-width: 920px)
+FtGL50QXkgX.css:1
+.__i_ {
+    font-size: 14px;
+}
+
+.uiScrollableAreaBody {
+    direction: ltr;
+    position: relative;
+}
+
+.uiScrollableArea {
+    direction: ltr;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+._4sp8 {
+    background-color: #fff;
+    display: flex;
+    font-size: 14px;
+    min-width: 500px;
+}
+
+._2sdm {
+    background-color: rgba(0, 0, 0, .05);
+    -webkit-font-smoothing: antialiased;
+}
+
+._z4_ {
+    font-family: Helvetica Neue, Segoe UI, Helvetica, Arial, sans-serif;
+    line-height: 1.28;
+    overflow: auto;
+    text-rendering: optimizeLegibility;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+
+#cch_f18635bad76a2._mh6._mh6 ::selection {
+    background: rgba(250, 60, 76, 0.2);
+}
+
+._mh6 ::selection {
+    background: rgba(0, 132, 255, .2);
+}
+
+._2sdm ::selection {
+    background-color: rgba(0, 132, 255, .2);
+}
+
+._41ud {
+    margin-left: 36px;
+}
+
+._ih3 {
+    color: rgba(0, 0, 0, .40);
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.1;
+    margin-bottom: 1px;
+    overflow: hidden;
+    padding-left: 12px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+._-ne {
+    height: 0;
+    opacity: 0;
+}
+
+._o46 {
+    position: relative;
+    white-space: pre-wrap;
+}
+
+.text_align_ltr {
+    text-align: left;
+}
+
+.direction_ltr {
+    direction: ltr;
+}
+
+._29_7:last-of-type ._3058._52mr:last-of-type, ._29_7:last-of-type ._3058._52mr:last-of-type ._4br2, ._29_7:last-of-type ._3058:last-of-type ._52mr, ._29_7:last-of-type ._3058:last-of-type ._52mr ._4br2 {
+    border-bottom-left-radius: 1.3em;
+}
+
+._29_7:first-of-type ._3058._52mr:first-of-type, ._29_7:first-of-type ._3058._52mr:first-of-type ._mxz, ._29_7:first-of-type ._3058:first-of-type ._52mr, ._29_7:first-of-type ._3058:first-of-type ._52mr ._mxz {
+    border-top-left-radius: 1.3em;
+}
+
+._hh7 {
+    background-color: #f1f0f0;
+    color: rgba(0, 0, 0, 1);
+    margin: 1px 0;
+    padding: 6px 12px;
+}
+
+._o46 ._3058 {
+    clear: left;
+    float: left;
+    word-wrap: break-word;
+}
+
+._o46 ._3058 {
+    clear: left;
+    float: left;
+    word-wrap: break-word;
+}
+
+._1t_q ._1t_r, ._1t_q ._4ldz, ._1t_q ._4ld-, ._1t_q ._4ld- img {
+    max-height: 28px;
+    max-width: 28px;
+    border-radius: 50%;
+}
+
+._4ld- .img {
+    object-fit: cover;
+}
+
+.sendmsg{
+	width: 97%;
+	border: none;
+	height: inherit;
+	padding: 20px;
 }

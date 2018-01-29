@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
 </head>
-<body>
+<body onload="chatrealtime()">
 <?php
 if(isset($_COOKIE['iduser']) and (isset($_COOKIE['inisession'])) and (isset($_COOKIE['thecry']))){
 	require 'static/php/dashboard.php';
